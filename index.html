@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zarif Ullah | Cyber Readiness ePortfolio</title>
+
+  <style>
+    :root {
+      --primary: #0f172a;
+      --secondary: #1e293b;
+      --accent: #2563eb;
+      --accent-light: #dbeafe;
+      --background: #f8fafc;
+      --card: #ffffff;
+      --text: #334155;
+      --muted: #64748b;
+      --border: #e2e8f0;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--background);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0f172a, #1e3a8a);
+      color: white;
+      padding: 70px 10%;
+      text-align: left;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    header h2 {
+      font-size: 1.3rem;
+      font-weight: 400;
+      color: #dbeafe;
+      margin-bottom: 25px;
+    }
+
+    header p {
+      max-width: 850px;
+      font-size: 1.05rem;
+      color: #e0f2fe;
+    }
+
+    nav {
+      background: white;
+      border-bottom: 1px solid var(--border);
+      padding: 15px 10%;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    nav a {
+      color: var(--secondary);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    section {
+      padding: 60px 10%;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      color: var(--primary);
+      margin-bottom: 20px;
+    }
+
+    .section-subtitle {
+      color: var(--muted);
+      max-width: 850px;
+      margin-bottom: 35px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 25px;
+      box-shadow: 0 4px 12px rgba(15, 23, 42, 0.05);
+    }
+
+    .card h3 {
+      color: var(--primary);
+      margin-bottom: 12px;
+      font-size: 1.2rem;
+    }
+
+    .card p {
+      color: var(--text);
+      font-size: 0.98rem;
+    }
+
+    .tag {
+      display: inline-block;
+      background: var(--accent-light);
+      color: var(--accent);
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      margin: 5px 5px 0 0;
+      font-weight: 600;
+    }
+
+    .highlight {
+      background: white;
+      border-left: 5px solid var(--accent);
+      padding: 25px;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    .timeline {
+      border-left: 3px solid var(--accent);
+      padding-left: 25px;
+      margin-top: 25px;
+    }
+
+    .timeline-item {
+      margin-bottom: 25px;
+    }
+
+    .timeline-item h3 {
+      color: var(--primary);
+      margin-bottom: 5px;
+    }
+
+    .timeline-item span {
+      color: var(--muted);
+      font-size: 0.9rem;
+      font-weight: bold;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .contact {
+      background: var(--primary);
+      color: white;
+      text-align: center;
+    }
+
+    .contact h2 {
+      color: white;
+    }
+
+    .contact p {
+      color: #cbd5e1;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 25px;
+      background: var(--accent);
+      color: white;
+      padding: 12px 22px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .button:hover {
+      background: #1d4ed8;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: var(--muted);
+      font-size: 0.9rem;
+      background: white;
+    }
+
+    @media print {
+      nav, .button {
+        display: none;
+      }
+
+      header, section {
+        padding: 35px 6%;
+      }
+
+      body {
+        background: white;
+      }
+
+      .card {
+        box-shadow: none;
+      }
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+
+      header, section, nav {
+        padding-left: 6%;
+        padding-right: 6%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Zarif Ullah</h1>
+    <h2>Cybersecurity Governance Student | B2B Telecommunications Sales Professional | Aspiring Cyber Readiness Consultant</h2>
+    <p>
+      I am currently studying a Bachelor of Commerce majoring in Cybersecurity Governance while working in B2B sales for a tier 1 telecommunications provider. 
+      My career goal is to move into cyber resilience, privacy, incident response and digital risk advisory, where I can combine commercial awareness, client communication and cybersecurity governance knowledge to help organisations prepare for and respond to cyber incidents.
+    </p>
+  </header>
+
+  <nav>
+    <a href="#profile">Profile</a>
+    <a href="#role-fit">Role Fit</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Cyber Portfolio</a>
+    <a href="#development">Development Plan</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="profile">
+    <h2 class="section-title">Professional Profile</h2>
+    <p class="section-subtitle">
+      This ePortfolio demonstrates my suitability for a Junior Consultant role within cyber readiness, privacy and digital risk advisory.
+    </p>
+
+    <div class="highlight">
+      <p>
+        My background sits at the intersection of cybersecurity governance and client-facing commercial work. Through my degree, I have developed knowledge of cyber risk, governance frameworks, incident response, privacy obligations and organisational resilience. Through my work in B2B telecommunications sales, I have built practical skills in stakeholder management, discovery questioning, business communication, solution positioning, objection handling and customer relationship management.
+      </p>
+      <br />
+      <p>
+        This combination is directly relevant to cyber readiness consulting, where organisations need support not only with technical cyber issues, but also with clear decision-making, communication, risk assessment, preparedness planning and business resilience.
+      </p>
+    </div>
+  </section>
+
+  <section id="role-fit">
+    <h2 class="section-title">Fit for Junior Consultant, Readiness</h2>
+    <p class="section-subtitle">
+      The Atmos Readiness role focuses on cyber resilience, privacy, incident preparedness, crisis management and client advisory. My academic and professional background aligns strongly with these areas.
+    </p>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Cyber Resilience</h3>
+        <p>
+          I understand cyber resilience as the ability of an organisation to prepare for, withstand, respond to and recover from cyber incidents while maintaining critical operations and stakeholder confidence.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Governance and Risk</h3>
+        <p>
+          My Cybersecurity Governance major has developed my understanding of security controls, risk frameworks, compliance obligations, audit thinking and organisational accountability.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Client Communication</h3>
+        <p>
+          My B2B sales experience has strengthened my ability to communicate with business stakeholders, identify client needs, explain complex solutions clearly and build trust in commercial conversations.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Incident Preparedness</h3>
+        <p>
+          I am interested in supporting incident response planning, cyber simulation exercises, tabletop activities, executive decision-making frameworks and post-incident improvement recommendations.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Privacy and Digital Risk</h3>
+        <p>
+          I am developing knowledge of privacy, data breach response, regulatory obligations and the reputational impact organisations face when sensitive information is compromised.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Business Development Support</h3>
+        <p>
+          My sales background gives me confidence in supporting client relationship initiatives, preparing proposals, contributing to account discussions and understanding commercial drivers behind cyber investment.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2 class="section-title">Transferable Skills</h2>
+    <p class="section-subtitle">
+      My existing experience provides a strong foundation for consulting work in cyber readiness and digital risk.
+    </p>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Client-Facing Skills</h3>
+        <div class="skills-list">
+          <span class="tag">Stakeholder management</span>
+          <span class="tag">Discovery questioning</span>
+          <span class="tag">Relationship building</span>
+          <span class="tag">Consultative communication</span>
+          <span class="tag">Objection handling</span>
+          <span class="tag">Professional follow-up</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Cyber Governance Skills</h3>
+        <div class="skills-list">
+          <span class="tag">Cyber risk assessment</span>
+          <span class="tag">Security governance</span>
+          <span class="tag">Incident response awareness</span>
+          <span class="tag">Privacy awareness</span>
+          <span class="tag">Policy analysis</span>
+          <span class="tag">Control frameworks</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Commercial Skills</h3>
+        <div class="skills-list">
+          <span class="tag">B2B sales</span>
+          <span class="tag">Solution positioning</span>
+          <span class="tag">Customer needs analysis</span>
+          <span class="tag">Proposal support</span>
+          <span class="tag">Commercial awareness</span>
+          <span class="tag">Business communication</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Professional Strengths</h3>
+        <div class="skills-list">
+          <span class="tag">Adaptability</span>
+          <span class="tag">Curiosity</span>
+          <span class="tag">Problem solving</span>
+          <span class="tag">Time management</span>
+          <span class="tag">Team collaboration</span>
+          <span class="tag">Attention to detail</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2 class="section-title">Relevant Experience</h2>
+    <p class="section-subtitle">
+      My current professional experience has given me direct exposure to business customers, telecommunications infrastructure and commercial solution design.
+    </p>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <span>Current</span>
+        <h3>B2B Sales Professional | Tier 1 Telecommunications Provider</h3>
+        <p>
+          In my current role, I work with business customers to understand their telecommunications needs, explain technical products in commercial language, manage customer conversations and support solution-based sales outcomes.
+        </p>
+        <br />
+        <ul>
+          <li>Communicate with business decision-makers and account stakeholders.</li>
+          <li>Identify customer requirements through discovery-based conversations.</li>
+          <li>Explain internet, cloud telephony, connectivity and managed service options.</li>
+          <li>Support customer decision-making through clear written and verbal communication.</li>
+          <li>Manage competing priorities, follow-ups and internal approval processes.</li>
+          <li>Develop commercial confidence when discussing business risk, continuity and service reliability.</li>
+        </ul>
+      </div>
+
+      <div class="timeline-item">
+        <span>Current Study</span>
+        <h3>Bachelor of Commerce | Major in Cybersecurity Governance</h3>
+        <p>
+          My degree has developed my understanding of cybersecurity from a business, governance and risk perspective. This includes cyber policy, organisational resilience, risk management, incident response, privacy, audit thinking and the role of security controls in protecting business operations.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2 class="section-title">Cybersecurity Portfolio</h2>
+    <p class="section-subtitle">
+      These academic and professional projects demonstrate my readiness for cyber advisory and resilience work.
+    </p>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Incident Response and Ransomware Analysis</h3>
+        <p>
+          Analysed ransomware scenarios involving operational disruption, sensitive data exposure, executive decision-making, ransom payment risks, stakeholder communication and recovery priorities.
+        </p>
+        <br />
+        <strong>Relevant to Atmos:</strong>
+        <p>
+          Supports understanding of incident response planning, crisis decision-making, cyber extortion and organisational resilience.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Information Systems Audit Planning</h3>
+        <p>
+          Developed audit-focused analysis around cybersecurity incidents, internal controls, risk exposure, governance weaknesses and assurance recommendations.
+        </p>
+        <br />
+        <strong>Relevant to Atmos:</strong>
+        <p>
+          Demonstrates structured thinking, control assessment and ability to translate cyber issues into business risk.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Cyber Governance and Risk Frameworks</h3>
+        <p>
+          Applied cybersecurity governance concepts to organisational scenarios, including risk matrices, control recommendations, maturity roadmaps and ISO-aligned security planning.
+        </p>
+        <br />
+        <strong>Relevant to Atmos:</strong>
+        <p>
+          Supports readiness framework development, resilience planning and executive-level cyber advisory.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Client Communication and Solution Design</h3>
+        <p>
+          Through B2B telecommunications sales, I regularly communicate with clients about business needs, connectivity requirements, service reliability and solution options.
+        </p>
+        <br />
+        <strong>Relevant to Atmos:</strong>
+        <p>
+          Transfers directly into client-facing consulting, business development support and stakeholder engagement.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="development">
+    <h2 class="section-title">2026 Skills Development Plan</h2>
+    <p class="section-subtitle">
+      To strengthen my readiness for cyber resilience consulting, I am actively developing skills across incident response, privacy, governance and advisory communication.
+    </p>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Framework Knowledge</h3>
+        <ul>
+          <li>ACSC Essential Eight</li>
+          <li>NIST Cybersecurity Framework</li>
+          <li>ISO 27001</li>
+          <li>Incident response lifecycle</li>
+          <li>Cyber resilience maturity models</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Privacy and Regulatory Awareness</h3>
+        <ul>
+          <li>Australian Privacy Act</li>
+          <li>Notifiable Data Breaches scheme</li>
+          <li>Cyber Security Act obligations</li>
+          <li>Data breach response processes</li>
+          <li>Stakeholder and regulator communication</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Consulting Skills</h3>
+        <ul>
+          <li>Client workshop support</li>
+          <li>Tabletop exercise preparation</li>
+          <li>Professional report writing</li>
+          <li>Executive communication</li>
+          <li>Action tracking and project coordination</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Emerging Cyber Skills</h3>
+        <ul>
+          <li>AI-related cyber risk awareness</li>
+          <li>Third-party risk management</li>
+          <li>Ransomware readiness</li>
+          <li>Operational resilience</li>
+          <li>Cloud and identity governance</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Value I Can Bring to Atmos</h2>
+
+    <div class="highlight">
+      <p>
+        I can bring a strong combination of cybersecurity governance knowledge, client-facing communication skills and commercial awareness. I understand that cyber resilience is not only a technical issue. It is also a business, legal, operational and reputational issue. My goal is to support organisations in preparing for high-pressure cyber and privacy incidents by helping translate complex risks into clear actions, practical plans and confident decision-making.
+      </p>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2 class="section-title">Contact</h2>
+    <p>
+      Zarif Ullah<br />
+      Sydney, Australia<br />
+      Email: zarifjullah@gmail.com<br />
+      LinkedIn: [Insert LinkedIn URL]<br />
+      Portfolio: [Insert Portfolio URL]
+    </p>
+
+    <a class="button" href="mailto:zarifjullah@gmail.com">Contact Me</a>
+  </section>
+
+  <footer>
+    <p>© 2026 Zarif Ullah. ePortfolio prepared for cyber readiness, privacy and digital risk consulting opportunities.</p>
+  </footer>
+
+</body>
+</html>
